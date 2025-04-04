@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ypnkr0m6a-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ypnkr0m6a-nodejs 
+  name: ypnkr0m6a-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: ypnkr0m6a-nodejs 
